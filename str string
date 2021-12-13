@@ -1,0 +1,17 @@
+Nếu bạn muốn xóa khoảng trắng đầu và cuối, hãy sử dụng str.strip():
+sentence = ' hello    apple'
+sentence.strip()
+>>> 'hello    apple'
+
+#lstrip xóa khoảng trắng bên trái, rstrip xóa khoảng trắng bên phải
+
+Nếu bạn muốn xóa tất cả các khoảng trắng, hãy sử dụng str.replace():
+sentence = '   hello    apple'
+sentence.replace(" ", "")
+>>> 'helloapple'
+
+
+Nếu bạn muốn xóa các khoảng trắng trùng lặp, sử dụng str.split():
+sentence = '   hello     apple        '
+" ".join(sentence.split())
+>>> 'hello apple'
